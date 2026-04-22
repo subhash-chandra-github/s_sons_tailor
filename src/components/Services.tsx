@@ -1,6 +1,17 @@
 import { motion } from 'motion/react';
 import { CATEGORIES } from '../constants';
 import { Scissors } from 'lucide-react';
+import casualImg from '../assets/images/casual.jpg';
+import traditionalImg from '../assets/images/traditional.jpg';
+import weddingImg from '../assets/images/wedding.jpg';
+import modernImg from '../assets/images/modern.jpg';
+
+const categoryImages: Record<string, string> = {
+  casuals: casualImg,
+  traditional: traditionalImg,
+  wedding: weddingImg,
+};
+
 export default function Services() {
   return (
     <section id="services" className="py-32 px-4 bg-white">
@@ -36,15 +47,7 @@ export default function Services() {
             >
               <div className="relative aspect-[3/4] overflow-hidden mb-10 shadow-2xl shadow-brand-dark/10">
                 <img
-                  src={
-                    category.id === 'casuals'
-                      ? "./src/assets/images/casual.jpg"
-                      : category.id === 'traditional'
-                        ? "./src/assets/images/traditional.jpg"
-                        : category.id === 'wedding'
-                          ? "./src/assets/images/wedding.jpg"
-                          : "./src/assets/images/modern.jpg"
-                  }
+                  src={categoryImages[category.id] ?? modernImg}
                   alt={category.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 brightness-90"
                   referrerPolicy="no-referrer"
