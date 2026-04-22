@@ -11,15 +11,15 @@ export default function Contact() {
               <Scissors className="w-8 h-8 text-brand-gold" />
               <span className="font-serif text-3xl font-bold tracking-tighter uppercase text-brand-dark">S.Sons</span>
             </div>
-            
+
             <div className="space-y-12">
               <div>
                 <h4 className="font-serif text-2xl font-bold mb-6 uppercase tracking-tight text-brand-dark">The Studio</h4>
                 <div className="flex gap-4 text-brand-dark/60 italic">
                   <MapPin className="w-6 h-6 text-brand-gold shrink-0 italic" />
                   <p className="leading-relaxed text-sm uppercase tracking-widest">
-                    Madiyaon, Lucknow,<br />
-                    Uttar Pradesh 226021, India
+                    60 Feet Rd, Jankipuram Vistar,<br />
+                    Lucknow, Uttar Pradesh 226021, India
                   </p>
                 </div>
               </div>
@@ -52,10 +52,10 @@ export default function Contact() {
                   </ul>
                 </div>
               </div>
-              
-              <a 
+
+              <a
                 href={SHOP_LOCATION}
-                target="_blank" 
+                target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-3 px-10 py-4 border border-brand-gold text-brand-dark font-black text-[10px] uppercase tracking-[0.3em] hover:bg-brand-gold hover:text-white transition-all shadow-xl shadow-brand-gold/5"
               >
@@ -65,17 +65,14 @@ export default function Contact() {
           </div>
 
           <div className="h-[500px] w-full bg-gray-100 relative group overflow-hidden shadow-2xl">
-            <iframe 
-              src="https://maps.google.com/maps?q=S%20Sons%20Tailor%20%26%20Collection%20Madiyaon%20Lucknow&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            <iframe
+              src="https://maps.google.com/maps?q=S%20Sons%20Tailor%20%26%20Collection%20Madiyaon%20Lucknow&t=&z=15&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full transition-all duration-700"
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div className="absolute top-4 left-4 bg-brand-dark text-white px-4 py-2 text-[10px] font-bold uppercase tracking-widest shadow-lg">
-              Lucknow Studio
-            </div>
           </div>
         </div>
 
