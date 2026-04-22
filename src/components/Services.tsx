@@ -59,17 +59,6 @@ export default function Services() {
                 </div>
               </div>
 
-              <ul className="space-y-6 px-2">
-                {category.services.map((service) => (
-                  <li key={service.name} className="flex justify-between items-end border-b border-brand-dark/5 pb-3">
-                    <div>
-                      <h4 className="font-bold text-sm text-brand-dark uppercase tracking-wider">{service.name}</h4>
-                      <p className="text-[10px] text-brand-dark/40 uppercase tracking-widest mt-1">{service.description.substring(0, 45)}</p>
-                    </div>
-                    <span className="text-brand-gold font-black text-sm">{service.price}</span>
-                  </li>
-                ))}
-              </ul>
             </motion.div>
           ))}
         </div>
